@@ -6,7 +6,7 @@ export default async function createItem() {
         title: faker.lorem.sentence(),
         url: faker.internet.url(),
         description: faker.lorem.paragraph(),
-        amount: Number(faker.finance.amount())
+        amount: Number(faker.finance.amount(0,1000,0))
     }
     return objeto
 }
